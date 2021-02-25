@@ -31,7 +31,7 @@ def create_users():
         return response
     else: 
         return notFound()
-
+#get
 @app.route("/users", methods=["GET"])
 def getUsers(): 
     users= mongo.db.users.find()
